@@ -6,7 +6,9 @@ The  most important is that it supports your own script to grab online dictionar
 
 # Background
 
-Reading (a lot) is the most importanrt aspect for serious language learner. Inspired by [readlang.com](http://readlang.com/) and [Foosoft/yomichan](https://github.com/FooSoft/yomichan), I built up a English-Chinese learning chrome extension - [Anki Dict Helper](https://github.com/ninja33/anki-dict-helper) in 2016. When users are reading web page online, they can move mouse cursor to the unkown word, press <kbd>shift</kbd> key, and then a pop up windows with that word definition will be displayed. It also can help make an anki note filling fields with **word**, **definition** and **context** (the surrounding sentence of selected word).
+Reading (a lot) is the most important aspect for serious language learners. Inspired by [readlang.com](http://readlang.com/) and [Foosoft/yomichan](https://github.com/FooSoft/yomichan), I built up a English-Chinese learning chrome extension - [Anki Dict Helper](https://github.com/ninja33/anki-dict-helper) in 2016. When users are reading web page online, they can move mouse cursor to the unkown word, press <kbd>shift</kbd> key, and then a pop up windows with that word definition will be displayed. It also can help make an anki note filling fields with **word**, **definition** and **context** (the surrounding sentence of selected word).
+
+![Anki Notes](https://raw.githubusercontent.com/ninja33/anki-online-dict-helper/master/images/anki_640x400.png)
 
 # The idea
 
@@ -35,11 +37,11 @@ The extension shipped in with two dictionaries as sample,  You can play with the
 
 1. English-Chinese dictionary: youdao.com (example for sentence captured as context)
 
-![Youdao Dictionary](https://raw.githubusercontent.com/ninja33/anki-online-dict-helper/master/doc/youdao.png)
+![Youdao Dictionary](https://raw.githubusercontent.com/ninja33/anki-online-dict-helper/master/images/youdao_640x400.png)
 
 2. English-English dictionary: collins.com (example for exact sample content from online dictionary)
 
-![Collins Dictionary](https://raw.githubusercontent.com/ninja33/anki-online-dict-helper/master/doc/collins.png)
+![Collins Dictionary](https://raw.githubusercontent.com/ninja33/anki-online-dict-helper/master/images/collins_640x400.png)
 
 As for dictionary collins.com, actually it is not built-in dictionary, it is here to show you how to load customized dictionary script.
 
@@ -52,9 +54,9 @@ The extension option page is devided in three section.
 *(Currently, the exntension can only output these three most important information. Web page url and audio can be added late.)*
 3. Dictionary Options:
     - Script Repository: Input your own script location here.
-    - Selected Dictionary: Here will display all available dictionaries (buildin and customized), and please what current dictionary you want to use.
+    - Selected Dictionary: Here will display all available dictionaries (buildin and customized), and please select what current dictionary you want to use.
 
-![Options Page](https://raw.githubusercontent.com/ninja33/anki-online-dict-helper/master/doc/options.png)
+![Options Page](https://raw.githubusercontent.com/ninja33/anki-online-dict-helper/master/images/options.png)
 
 # Start your own script
 
@@ -124,7 +126,7 @@ Unfortunately, it's not RTG(Ready To Go) package for beginner. The extension alr
 
 # Security issue
 
-Because the extension will dynamically load your own customized script, so, you know what you are doing here.
+Because the extension will dynamically load your own customized script, so, you know what are you doing here.
 1. You need explicitly input your script location in option page.
 2. The only allowed script source domain is rawgit.com which means all code is public and can be tracked on Github.com
 
@@ -134,3 +136,16 @@ Welcome pull request if you want to enhancement this extension, or put your own 
 
 - the exntension source will go to /src
 - the online dictionary script will go to /dicts
+
+# Dictionary script list
+
+Below is existing dictionaries script list. You may right click to copy the link and paste it in option page **Repository** field to load the script.
+
+|Dictionary Name|Descrition|Repository|Type|
+|encn-Default|dict.youdao.com Online Dictionary|Builtin|Builtin|
+|encn-List|encn Dictionary Bundle|[encn-List](https://rawgit.com/ninja33/anki-online-dict-helper/master/dicts/encn-list.js)|List|
+|encn-Baicizhan|baicizhan.com Online Dictionary|[encn-Baicizhan](https://rawgit.com/ninja33/anki-online-dict-helper/master/dicts/baicizhan.js)|Dictionary|
+|encn-Bing|cn.bing.com Online Dictionary|[encn-Bing](https://rawgit.com/ninja33/anki-online-dict-helper/master/dicts/cnbing.js)|Dictionary|
+|encn-CNDict|dict.cn Online Dictionary|[encn-CNDict](https://rawgit.com/ninja33/anki-online-dict-helper/master/dicts/cndict.js)|Dictionary|
+|enen-Collins|collins.com Online Dictinary|[enen-Collins](https://rawgit.com/ninja33/anki-online-dict-helper/master/dicts/cndict.js)|Dictionary|
+

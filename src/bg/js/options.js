@@ -1,6 +1,6 @@
 function sanitizeOptions(options) {
     const defaults = {
-        enabled: true,
+        enabled: false,
 
         deckname: 'Default',
         typename: 'Basic',

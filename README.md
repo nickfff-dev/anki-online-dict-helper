@@ -1,4 +1,4 @@
-# Online Dictioary Helper (with anki support) 
+# Online Dictionary Helper (with anki support) 
 
 It's a chrome extension to show online dictionary content. It also can help make note in anki desktop (with ankiconnect installed).
 
@@ -24,6 +24,8 @@ But (there is always a 'but' in the end), we are at Internet age right now. Ther
 The **online definition** part is driven by customized javascript which could be written by you or your friend, and hosted on Github.com
 
 # How to use
+
+[Chrome Web Store Link](https://chrome.google.com/webstore/detail/anki-online-dictionary-he/lppjdajkacanlmpbbcdkccjkdbpllajb?hl=en)
 
 1. Install the extesion first from Chrome Web store. Setup Option and turn on the extension if you want. (detail in below option page section)
 2. (Optional) Setup anki deck, type and fields names to put your **word**, **definition**, **sentence**.
@@ -112,9 +114,9 @@ if (typeof YouClassName == 'undefined') {
 
 ```javascript
 registerList([
-    'https://rawgit.com/ninja33/anki-online-dict-helper/master/dicts/baicizhan.js', // FQDN (Full Qualified Domain Name and Path)
-    'https://rawgit.com/ninja33/anki-online-dict-helper/master/dicts/cnbing.js',    // FQDN (Full Qualified Domain Name and Path)
-    'https://rawgit.com/ninja33/anki-online-dict-helper/master/dicts/cndict.js',    // FQDN (Full Qualified Domain Name and Path)
+    'https://rawgit.com/ninja33/anki-online-dict-helper/master/dicts/baicizhan.js',
+    'https://rawgit.com/ninja33/anki-online-dict-helper/master/dicts/cnbing.js',
+    'https://rawgit.com/ninja33/anki-online-dict-helper/master/dicts/cndict.js',
 ]);
 ```
 
@@ -142,6 +144,7 @@ Welcome pull request if you want to enhancement this extension, or put your own 
 Below is existing dictionaries script list. You may right click to copy the link and paste it in option page **Repository** field to load the script.
 
 |Dictionary Name|Descrition|Repository|Type|
+|---|---|---|---|
 |encn-Default|dict.youdao.com Online Dictionary|Builtin|Builtin|
 |encn-List|encn Dictionary Bundle|[encn-List](https://rawgit.com/ninja33/anki-online-dict-helper/master/dicts/encn-list.js)|List|
 |encn-Baicizhan|baicizhan.com Online Dictionary|[encn-Baicizhan](https://rawgit.com/ninja33/anki-online-dict-helper/master/dicts/baicizhan.js)|Dictionary|

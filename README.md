@@ -150,5 +150,5 @@ Below is existing dictionaries script list. You may right click to copy the link
 |encn-Baicizhan|baicizhan.com Online Dictionary|[encn-Baicizhan](https://rawgit.com/ninja33/anki-online-dict-helper/master/dicts/baicizhan.js)|Dictionary|
 |encn-Bing|cn.bing.com Online Dictionary|[encn-Bing](https://rawgit.com/ninja33/anki-online-dict-helper/master/dicts/cnbing.js)|Dictionary|
 |encn-CNDict|dict.cn Online Dictionary|[encn-CNDict](https://rawgit.com/ninja33/anki-online-dict-helper/master/dicts/cndict.js)|Dictionary|
-|enen-Collins|collins.com Online Dictinary|[enen-Collins](https://rawgit.com/ninja33/anki-online-dict-helper/master/dicts/cndict.js)|Dictionary|
+|enen-Collins|collins.com Online Dictinary|[enen-Collins](https://rawgit.com/ninja33/anki-online-dict-helper/master/dicts/collins.js)|Dictionary|
 

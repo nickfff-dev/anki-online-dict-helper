@@ -23,7 +23,7 @@ The **online definition** part is driven by customized javascript which could be
 
 # How to use
 
-1. Install the extesion first from Chrome Web store. Setup Option if you want. (detail in below option page section)
+1. Install the extesion first from Chrome Web store. Setup Option and turn on the extension if you want. (detail in below option page section)
 2. (Optional) Setup anki deck, type and fields names to put your **word**, **definition**, **sentence**.
 3. Open some web pages which have English artical (by default option which has English dictionary only).
 4. Move mouse cursor to the word, double click to select or press <kbd>shift</kbd> to automatically select word in case it's a link.

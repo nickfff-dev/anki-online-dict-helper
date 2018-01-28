@@ -2,7 +2,7 @@
 
 It's a chrome extension to show online dictionary content. It also can help make note in anki desktop (with ankiconnect installed).
 
-The  most important is that it support your own script to grab online dictionary content.
+The  most important is that it supports your own script to grab online dictionary content.
 
 # Background
 
@@ -27,17 +27,17 @@ The **online definition** part is driven by customized javascript which could be
 2. (Optional) Setup anki deck, type and fields names to put your **word**, **definition**, **sentence**.
 3. Open some web pages which have English artical (by default option which has English dictionary only).
 4. Move mouse cursor to the word, double click to select or press <kbd>shift</kbd> to automatically select word in case it's a link.
-5. A popup windows displayed to show the word definition.
+5. A popup window displayed to show the word definition.
 6. (Optional) Press top/right green **(+)** icon to add anki note. 
 7. (Optional) You need make sure anki desktop was open and ankiconnect addon was installed.
 
 The extension shipped in with two dictionaries as sample,  You can play with these 2 dicntionaries and see if it's what you want.
 
-1. English-Chinese dictionary: youdao.com
+1. English-Chinese dictionary: youdao.com (example for sentence captured as context)
 
 ![Youdao Dictionary](https://raw.githubusercontent.com/ninja33/anki-online-dict-helper/master/doc/youdao.png)
 
-2. English-English dictionary: collins.com
+2. English-English dictionary: collins.com (example for exact sample content from online dictionary)
 
 ![Collins Dictionary](https://raw.githubusercontent.com/ninja33/anki-online-dict-helper/master/doc/collins.png)
 
@@ -48,7 +48,8 @@ As for dictionary collins.com, actually it is not built-in dictionary, it is her
 The extension option page is devided in three section.
 
 1. General Option: Turn on or turn off the extension if you want.
-2. Anki Options: Setup Anki deck/type name, and which fields you are going to put **word**, **definiton**, **sentence**. Currently, the exntension can only output these three most important information. Web page url and audio can be added late.
+2. Anki Options: Setup Anki deck/type name, and which fields you are going to put **word**, **definiton**, **sentence**. 
+*(Currently, the exntension can only output these three most important information. Web page url and audio can be added late.)*
 3. Dictionary Options:
     - Script Repository: Input your own script location here.
     - Selected Dictionary: Here will display all available dictionaries (buildin and customized), and please what current dictionary you want to use.
@@ -68,13 +69,13 @@ For example:
 
 ## Framework & Workflow
 
-Bacially, the extension will accept your browser word selection as input, pass it to your own dictionary script for online query, then get returned content and show it on broswer popup windows. (optional)When you click **(+)** button, it will add a note for you in anki with **word**, **definition**, **sentence** in those fields defined in option page.
+Bacially, the extension will accept your browser word selection as input, pass it to your own dictionary script for online query, then get returned content and show it in broswer popup window. (optional)When you click **(+)** button, it will add a note for you in anki with **word**, **definition**, **sentence** in those fields defined in option page.
 
 The dictionary script contains three parts:
 
 1. Build an online dictionary query url. In most cases, it's like http(s)://example.online.dictionary.com/search?word={your-word}
 2. Perform online query by sending above url, and get the web page content.
-3. To clear up the content and return. You may need use Elemenet/CSS selector (getEelement(s)byXXX or querySelector(All)) to get the definition part you want.
+3. To clear up the content and return. You may need use Elemenet/CSS selector (`getEelement(s)byXXX or querySelector(All)`) to get the definition part you want.
 
 ## Coding convention
 
@@ -82,7 +83,7 @@ The dictionary script contains three parts:
 
 **Important:** To distinguish different language by displayname, you'd better use 2 digit country code for both source and target language as prefix, like **encn-DictionryName** for dictionary taking English as source and Chinese as target.
 
-2. Second, in your dictionary Class, you need define at least one function named as `findTerm()` , which accept **word** as function parameter, return a javascript Promise object. That's all.
+2. Second, in your dictionary Class, you need define at least one function named `findTerm()` , which accept **word** as function parameter, return a Promise object. That's all.
 
 Below is script template to start your own coding.
 
@@ -119,7 +120,7 @@ You can find the dictionary script source code sample under [/dicts](https://git
 
 # Too Complicated?
 
-Unfortunately, it's not RTG(Ready To Go) package for beginner. The extension already built up a framework to accept your broswer selection, display popup, create anki note, but the dictionary part is up to you. Ask someone who know javascript programming if you really need help.
+Unfortunately, it's not RTG(Ready To Go) package for beginner. The extension already built up a framework to accept your broswer selection, display popup, create anki note, config the option page, but the dictionary part is up to you. Ask someone who know javascript programming if you really need help.
 
 # Security issue
 
